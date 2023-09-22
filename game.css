@@ -1,0 +1,221 @@
+  * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+  }
+    body {
+         background-color: black;
+         color: white;
+    }
+.box {
+    
+    display: flex;
+
+    height: 90vh;
+ 
+}
+      .content {
+       display: grid;
+       align-items: center;
+        padding: 5px 20px;
+          width: 90%;
+         margin: 0 auto;
+        
+      }
+       .content h1 {
+         font-size: 5rem;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         padding-left: 10px;
+         letter-spacing: 2px; 
+       }
+         
+         .content h2 {
+             font-size: 4rem;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+              padding-left: 10px;
+         }
+           .content h4 {
+             font-size: 2rem;
+              font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing: 2px;
+           }
+
+
+           .btn {
+             display: flex;
+             justify-content: center;
+        
+           }
+             .btn button {
+                background-color:purple;
+                border-radius: 20px;
+                color: white;
+                 width: 50%;
+          
+                 padding: 20px;
+                 font-size: 1.3rem;
+                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+             }
+             .btn button:hover {
+                 background-color: red;
+             }
+             .win {
+              position: fixed;
+              top:0;
+              background-color:rgba(0,2,35,1);
+              width: 100vw;
+              height: 100%;
+              z-index: 20;
+              display: grid;
+               justify-content: center;
+              align-items: space-evenly;
+               transform: translateY(100%);
+               transition: 0.5s linear;
+            }
+              .win h1 {
+               display: grid;
+                align-items: center;
+                font-size: 180px;
+                text-align: center;
+              }
+                 .win h2 {
+                    text-align: center;
+                     font-size: 30px;
+                     font-family:Verdana, Geneva, Tahoma, sans-serif;
+                 }
+                  
+                  .win button {
+                    width:60vw;
+                    margin:auto;
+                    padding: 20px;
+                    font-size: 19px;
+                     background-color:rgb(10,30,150);
+                     border: none;
+                     border-radius: 10px;
+                     color: white;
+                  }
+                    .win button:hover {
+                      background-color: purple;
+                    }
+                    .lose {
+                      position: fixed;
+                      bottom:0;
+                      background-color:rgba(0,2,35,1);
+                      width: 100vw;
+                      height: 100%;
+                      z-index: 20;
+                      display: grid;
+                       justify-content: center;
+                       align-items: space-evenly;
+                       transform: translateY(-100%);
+                       transition: 0.5s linear;
+                    }
+                    .lose h1 {
+                      display: grid;
+                       align-items: center;
+                       font-size: 180px;
+                       text-align: center;
+                     }
+                        .lose h2 {
+                           text-align: center;
+                            font-size: 30px;
+                            font-family:Verdana, Geneva, Tahoma, sans-serif;
+                        }
+                         
+                         .lose button {
+                           width:60vw;
+                           margin:auto;
+                           padding: 20px;
+                           font-size: 19px;
+                            background-color:rgb(10,30,150);
+                            border: none;
+                            border-radius: 10px;
+                            color: white;
+                         }
+                           .lose button:hover {
+                             background-color: purple;
+                           }
+
+     @media(max-width:900px) {
+         .content h1 {
+             font-size:3rem;
+         }
+          .content h2 {
+             font-size: 2rem;
+              
+          }
+            .content h4 {
+             font-size: 1.5rem;
+            }
+             .btn button {
+                 font-size: 1rem;
+                 padding: 20px;
+             }
+     }
+
+     @media(max-width:480px) {
+        .content {
+             padding: 0;
+        }
+        .content h1 {
+            font-size:2rem;
+            padding: 0;
+        }
+         .content h2 {
+            font-size: 2rem;
+             padding: 0;
+             
+         }
+           .content h4 {
+            font-size: 1.5rem;
+            padding: 0;
+           }
+            .btn button {
+                font-size: 1rem;
+                padding: 17px;
+            }
+            .win h1 {
+               font-size: 100px;
+            }
+             .win button {
+               width: 80vw;
+             }
+             .lose h1 {
+              font-size: 100px;
+           }
+            .lose button {
+              width: 80vw;
+            }
+     }  
+          @media(max-height:500px){
+            .content h1 {
+              font-size:2rem;
+              padding: 0;
+          }
+           .content h2 {
+              font-size: 2rem;
+               padding: 0;
+               
+           }
+             .content h4 {
+              font-size: 1.5rem;
+              padding: 0;
+             }
+             .btn button {
+              padding: 18px 14px;
+             }
+             .win h1,
+             .lose h1 {
+               font-size: 50px;
+             }
+          
+             .win button,
+             .lose button {
+               padding: 7px 10px;
+             }
+          
+             .win h2,
+             .lose h2 {
+               font-size: 15px;
+             }
+          }

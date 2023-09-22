@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        * {
+             box-sizing: border-box;
+             margin: 0;
+             padding: 0;
+        }
+          body {
+             background-color: rgb(212,145,79);;
+          }
+          header {
+    display: grid;
+    align-items: center;
+     font-size: 12px;
+     font-weight: bold;
+     font-family:cursive;
+     height: 10vh;
+     text-align: center;
+      color:white;
+}
+   main {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+   }
+     .box {
+        display: grid;
+        height: 80%;
+        align-items: space-evenly;
+         text-align: center;
+         padding: 20px;
+             
+     }
+     .box h3 {
+         font-size: 30px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+      .box h4 {
+         font-size: 30px;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+        .box button {
+            margin: auto;
+             width: 50%;
+              height: auto;
+              padding: 20px;
+              background-color: black;
+              color: white;
+              font-size: 19px;
+              font-family: cursive;
+              border: none;
+        }
+         .box button:hover{
+             background-color: brown;
+         }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Seg's Blackjack Game</h1>
+    </header>
+     <main>
+        <div class="box">
+             <h3>A demo of the blackjack played in the real world.</h3>
+              <h4> Feel the thrill.</h4>
+               <button onclick="document.location='rules.html'"> Play Now</button>
+        </div>
+     </main>
+</body>
+</html>
